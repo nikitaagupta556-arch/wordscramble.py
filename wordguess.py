@@ -19,15 +19,15 @@ for i in range(0,n):
     while attempts>0:
         guess=input("Enter Your Guess: ").lower()
         if guess==list1[i]:
-            print("✅ Correct! You win this round..!!!")
+            print("Correct! You win this round..!!!")
             score+=1
             break
         else:
             attempts=attempts-1
             if attempts>0:
-                print(f"❌ Incorrect! Attempts left: {attempts}")
+                print(" Incorrect! Attempts left: {attempts}")
             else:
-                print("❌ No attempts left..!!!")
+                print("No attempts left..!!!")
     if guess!=list1[i]:
         print("The correct word is :",list1[i])
     print()
